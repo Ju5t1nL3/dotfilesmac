@@ -134,11 +134,17 @@ alias skhdconfig="code ~/.config/skhd/skhdrc"
 alias yabaiconfig="code ~/.config/yabai/yabairc"
 
 # reload zsh
-alias rlzsh="source ~/.zshrc"
+alias zshrestart="source ~/.zshrc"
 
 # sketchybar
-alias startsketch="nohup sketchybar >/dev/null 2>&1 &"
-alias endsketch="killall sketchybar"
-alias restartsketch="killall sketchybar && nohup sketchybar >/dev/null 2>&1 &"
+alias sketchstart="nohup sketchybar >/dev/null 2>&1 &"
+alias sketchstop="killall sketchybar"
+alias sketchrestart="killall sketchybar && nohup sketchybar >/dev/null 2>&1 &"
+
+# yabai
+alias yabairestart="yabai --restart-service"
+
+# skhd
+alias skhdrestart="skhd --restart-service"
 
 eval "$(zoxide init zsh)"
