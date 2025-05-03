@@ -1,0 +1,74 @@
+# Changing Window Focus
+
+# Change window-focus within space
+cmd - j : yabai -m window --focus south 
+cmd - k : yabai -m window --focus north 
+cmd - h : yabai -m window --focus west
+cmd - l : yabai -m window --focus east
+
+# Change window-focus btwn external displays
+ctrl - s : yabai -m display --focus west
+ctrl - g : yabai -m display --focus east
+
+# flip along y-axis
+shift + cmd - y : yabai -m space --mirror y-axis
+
+# flip along x-axis
+shift + cmd - x : yabai -m space --mirror x-axis
+
+# toggle window float
+shift + cmd - i : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# Modifying Window Size
+
+# maximize a window
+shift + cmd - m : yabai -m window --toggle zoom-fullscreen
+
+# balance out of tree windows (resize to occupy same area)
+shift + cmd - e : yabai -m space --balance
+
+# move window and split
+cmd + shift - j : yabai -m window --warp south
+cmd + shift - k : yabai -m window --warp north
+cmd + shift - h : yabai -m window --warp west
+cmd + shift - l : yabai -m window --warp east
+
+# move window to prev and next space
+ctrl + shift - left : yabai -m window --space prev
+ctrl + shift - right : yabai -m window --space next
+
+# move window to recent space
+ctrl + shift - tab : yabai -m window --space recent --focus
+
+# switch between spaces
+ctrl - 1 : yabai -m space --focus 1
+ctrl - 2 : yabai -m space --focus 2
+ctrl - 3 : yabai -m space --focus 3
+ctrl - 4 : yabai -m space --focus 4
+ctrl - 5 : yabai -m space --focus 5
+ctrl - 6 : yabai -m space --focus 6
+ctrl - 7 : yabai -m space --focus 7
+ctrl - 8 : yabai -m space --focus 8
+ctrl - 9 : yabai -m space --focus 9
+
+# switch to prev and next spacee
+ctrl - left : yabai -m space --focus prev
+ctrl - right : yabai -m space --focus next
+
+# move window to space #
+ctrl + shift - 1 : yabai -m window --space 1 --focus
+ctrl + shift - 2 : yabai -m window --space 2 --focus
+ctrl + shift - 3 : yabai -m window --space 3 --focus
+ctrl + shift - 4 : yabai -m window --space 4 --focus
+ctrl + shift - 5 : yabai -m window --space 5 --focus
+ctrl + shift - 6 : yabai -m window --space 6 --focus
+ctrl + shift - 7 : yabai -m window --space 7 --focus
+ctrl + shift - 8 : yabai -m window --space 8 --focus
+ctrl + shift - 9 : yabai -m window --space 9 --focus
+
+# move window to screen
+ctrl + shift - s : yabai -m window --display west --focus
+ctrl + shift - g : yabai -m window --display east --focus
+
+# restart yabai
+cmd + shift - r : yabai --restart-service
