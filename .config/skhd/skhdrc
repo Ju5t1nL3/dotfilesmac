@@ -56,19 +56,19 @@ ctrl - left : yabai -m space --focus prev
 ctrl - right : yabai -m space --focus next
 
 # move window to space #
-ctrl + shift - 1 : yabai -m window --space 1 --focus
-ctrl + shift - 2 : yabai -m window --space 2 --focus
-ctrl + shift - 3 : yabai -m window --space 3 --focus
-ctrl + shift - 4 : yabai -m window --space 4 --focus
-ctrl + shift - 5 : yabai -m window --space 5 --focus
-ctrl + shift - 6 : yabai -m window --space 6 --focus
-ctrl + shift - 7 : yabai -m window --space 7 --focus
-ctrl + shift - 8 : yabai -m window --space 8 --focus
-ctrl + shift - 9 : yabai -m window --space 9 --focus
+ctrl + shift - 1 : yabai -m window --space 1 
+ctrl + shift - 2 : yabai -m window --space 2 
+ctrl + shift - 3 : yabai -m window --space 3 
+ctrl + shift - 4 : yabai -m window --space 4 
+ctrl + shift - 5 : yabai -m window --space 5 
+ctrl + shift - 6 : yabai -m window --space 6 
+ctrl + shift - 7 : yabai -m window --space 7 
+ctrl + shift - 8 : yabai -m window --space 8 
+ctrl + shift - 9 : yabai -m window --space 9 
 
 # move window to screen
-ctrl + shift - s : yabai -m window --display west --focus
-ctrl + shift - g : yabai -m window --display east --focus
+ctrl + shift - s : yabai -m window --display west 
+ctrl + shift - g : yabai -m window --display east 
 
 # restart yabai
 cmd + shift - r : yabai --restart-service
