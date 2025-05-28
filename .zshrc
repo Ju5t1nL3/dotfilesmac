@@ -129,9 +129,9 @@ alias cmpl="g++ -std=c++17 -Wall -Wextra -pedantic-errors -Weffc++ -Wno-unused-p
 alias suggest="gh copilot suggest -t shell"
 
 # alias for configs
-alias zshconfig="code ~/dotfiles/.zshrc"
-alias skhdconfig="code ~/dotfiles/.config/skhd/skhdrc"
-alias yabaiconfig="code ~/dotfiles/.config/yabai/yabairc"
+alias zshconfig="code ~/dotfilesmac/.zshrc"
+alias skhdconfig="code ~/dotfilesmac/.config/skhd/skhdrc"
+alias yabaiconfig="code ~/dotfilesmac/.config/yabai/yabairc"
 
 # reload zsh
 alias zshrestart="source ~/.zshrc"
