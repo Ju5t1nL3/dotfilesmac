@@ -811,6 +811,7 @@ require("lazy").setup({
 		config = function()
 			---@diagnostic disable-next-line: missing-fields
 			require("catppuccin").setup({
+				flavour = "mocha",
 				styles = {
 					comments = {},
 				},
@@ -819,7 +820,7 @@ require("lazy").setup({
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("catppuccin-mocha")
+			vim.cmd.colorscheme("catppuccin")
 		end,
 	},
 
@@ -832,7 +833,37 @@ require("lazy").setup({
 	},
 
 	{ -- Collection of various small independent plugins/modules
-		"echasnovski/mini.nvim",
+		"nvim-mini/mini.nvim",
+		keys = {
+			{
+				-- This is the "smart" command to open the directory of the current file
+				"<leader>e",
+				function()
+					local buf_name = vim.api.nvim_buf_get_name(0)
+					local dir_name = vim.fn.fnamemodify(buf_name, ":p:h")
+
+					-- Check if the file exists
+					if vim.fn.filereadable(buf_name) == 1 then
+						-- If yes, open mini.files highlighting that file
+						require("mini.files").open(buf_name, true)
+					-- If file doesn't exist, check if its parent directory does
+					elseif vim.fn.isdirectory(dir_name) == 1 then
+						require("mini.files").open(dir_name, true)
+					-- If neither exists, fall back to the current working directory
+					else
+						require("mini.files").open(vim.uv.cwd(), true)
+					end
+				end,
+				desc = "Open mini.files (smart)",
+			},
+			{
+				"<leader>E",
+				function()
+					require("mini.files").open(vim.uv.cwd(), true)
+				end,
+				desc = "Open mini.files (cwd)",
+			},
+		},
 		config = function()
 			-- Better Around/Inside textobjects
 			--
@@ -848,6 +879,9 @@ require("lazy").setup({
 			-- - sd'   - [S]urround [D]elete [']quotes
 			-- - sr)'  - [S]urround [R]eplace [)] [']
 			require("mini.surround").setup()
+
+			-- Mini tree files
+			require("mini.files").setup()
 
 			-- Simple and easy statusline.
 			--  You could remove this setup call if you don't like it,
