@@ -17,10 +17,10 @@ keybind = cmd+r=reload_config
 custom-shader = shaders/cursor_smear.glsl
 
 # Send custom CSI sequences for pane navigation
-keybind = cmd+left=csi:100;1L
-keybind = cmd+right=csi:100;1R
-keybind = cmd+up=csi:100;1U
-keybind = cmd+down=csi:100;1D
+keybind = ctrl+h=csi:100;1L
+keybind = ctrl+l=csi:100;1R
+keybind = ctrl+k=csi:100;1U
+keybind = ctrl+j=csi:100;1D
 
 # Send a custom CSI sequence for closing a pane
 keybind = cmd+w=csi:100;1w
