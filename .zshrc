@@ -111,9 +111,9 @@ alias cmpl="g++ -std=c++17 -Wall -Wextra -pedantic-errors -Weffc++ -Wno-unused-p
 alias suggest="gh copilot suggest -t shell"
 
 # alias for configs
-alias zshconfig="code ~/dotfilesmac/.zshrc"
-alias skhdconfig="code ~/dotfilesmac/.config/skhd/skhdrc"
-alias yabaiconfig="code ~/dotfilesmac/.config/yabai/yabairc"
+alias zshconfig="nvim ~/dotfilesmac/.zshrc"
+alias skhdconfig="nvim ~/dotfilesmac/.config/skhd/skhdrc"
+alias yabaiconfig="nvim ~/dotfilesmac/.config/yabai/yabairc"
 
 # reload zsh
 alias zshrestart="source ~/.zshrc"
@@ -128,6 +128,11 @@ alias yabairestart="yabai --restart-service"
 
 # skhd
 alias skhdrestart="skhd --restart-service"
+
+# tmux start
+tm() {
+  tmux new-session -s "$1"
+}
 
 eval "$(zoxide init zsh)"
 # The next line updates PATH for the Google Cloud SDK.
