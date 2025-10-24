@@ -114,6 +114,7 @@ alias suggest="gh copilot suggest -t shell"
 alias zshconfig="nvim ~/dotfilesmac/.zshrc"
 alias skhdconfig="nvim ~/dotfilesmac/.config/skhd/skhdrc"
 alias yabaiconfig="nvim ~/dotfilesmac/.config/yabai/yabairc"
+alias ghosttyconfig="nvim ~/dotfilesmac/.config/ghostty/config"
 
 # reload zsh
 alias zshrestart="source ~/.zshrc"
