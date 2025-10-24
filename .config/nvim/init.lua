@@ -392,11 +392,15 @@ require("lazy").setup({
 			-- To check the current status of installed tools and/or manually install
 			-- other tools, you can run
 			--    :Mason
-			--
+			local formatters = {
+				"stylua",
+				"clang-format",
+				"prettierd",
+				"prettier",
+				"fourmolu",
+			}
 			local ensure_installed = vim.tbl_keys(servers or {})
-			vim.list_extend(ensure_installed, {
-				"stylua", -- Used to format Lua code
-			})
+			vim.list_extend(ensure_installed, formatters)
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
 			require("mason-lspconfig").setup({
