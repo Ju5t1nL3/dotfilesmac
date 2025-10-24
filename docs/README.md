@@ -1,3 +1,3 @@
 My simple configs for macOS :D
 
-<img width="1680" alt="image" src="https://github.com/user-attachments/assets/bd149803-104c-4fde-97b0-1a1b2c3325f2" />
+<img width="1728" height="1117" alt="Screenshot 2025-10-24 at 12 02 55 AM" src="https://github.com/user-attachments/assets/d707171c-7c5e-4a85-abea-68ca846b3d27" />
