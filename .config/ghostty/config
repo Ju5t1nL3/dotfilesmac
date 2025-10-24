@@ -1,5 +1,5 @@
 # config
-shell-integration = zsh
+shell-integration = fish
 theme = Catppuccin Mocha
 working-directory = home
 window-inherit-working-directory = false
