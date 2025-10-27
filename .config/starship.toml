@@ -8,6 +8,7 @@ $git_branch\
 $fill\
 $python\
 $nodejs\
+$cpp\
 $docker_context\
 $jobs\
 $time\
@@ -15,18 +16,27 @@ $line_break\
 ╰─ $character\
 """
 
-[character]
-# Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛](green) ❯](peach)"
-error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
+# Left side: Directory + Git
+[directory]
+truncation_length = 4
+style = "bold lavender"
 
 [git_branch]
 style = "bold mauve"
 
-[directory]
-truncation_length = 4
-style = "bold lavender"
+# Right side: Devtool versions + Time
+[python]
+style = "bold teal"
+symbol = ""
+format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+
+[cpp]
+format = 'via [$symbol ($version(-$name) )]($style)'
+disabled = false
+version_format = 'v${major}'
+symbol = ''
+detect_extensions = ['cpp', 'cc', 'cxx', 'c++', 'h', 'hpp', 'hh', 'hxx', 'h++', 'tcc']
 
 [time]
 disabled = false
@@ -38,6 +48,7 @@ success_symbol = "[[󰊠](green) ❯](peach)"
 error_symbol = "[[󰊠](red) ❯](peach)"
 vimcmd_symbol = "[󰊠 ❮](subtext1)" # For use with zsh-vi-mode
 
+# Catppuccin Palette
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
