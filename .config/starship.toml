@@ -46,7 +46,6 @@ use_12hr = true
 [character]
 success_symbol = "[[󰊠](green) ❯](peach)"
 error_symbol = "[[󰊠](red) ❯](peach)"
-vimcmd_symbol = "[󰊠 ❮](subtext1)" # For use with zsh-vi-mode
 
 # Catppuccin Palette
 [palettes.catppuccin_mocha]
