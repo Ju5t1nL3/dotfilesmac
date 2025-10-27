@@ -3,7 +3,7 @@
 palette = "catppuccin_mocha"
 
 format = """
-$directory\
+╭─ $directory\
 $git_branch\
 $git_status\
 $fill\
@@ -14,7 +14,7 @@ $docker_context\
 $jobs\
 $cmd_duration\
 $line_break\
-$character\
+╰─ $character\
 """
 
 [character]
@@ -29,6 +29,12 @@ style = "bold mauve"
 [directory]
 truncation_length = 4
 style = "bold lavender"
+
+# Input line
+[character]
+success_symbol = "[[󰊠](green) ❯](peach)"
+error_symbol = "[[󰊠](red) ❯](peach)"
+vimcmd_symbol = "[󰊠 ❮](subtext1)" # For use with zsh-vi-mode
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
