@@ -13,6 +13,7 @@ $nodejs\
 $docker_context\
 $jobs\
 $cmd_duration\
+$time\
 $line_break\
 ╰─ $character\
 """
@@ -29,6 +30,10 @@ style = "bold mauve"
 [directory]
 truncation_length = 4
 style = "bold lavender"
+
+[time]
+disabled = false
+use_12hr = true
 
 # Input line
 [character]
