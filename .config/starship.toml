@@ -5,14 +5,11 @@ palette = "catppuccin_mocha"
 format = """
 ╭─ $directory\
 $git_branch\
-$git_status\
 $fill\
-$lua\
 $python\
 $nodejs\
 $docker_context\
 $jobs\
-$cmd_duration\
 $time\
 $line_break\
 ╰─ $character\
