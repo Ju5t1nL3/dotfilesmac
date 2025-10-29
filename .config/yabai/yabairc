@@ -26,6 +26,10 @@ yabai -m config mouse_action2 resize
 
 yabai -m mouse_drop_action swap
 
+# window animations
+yabai -m config window_animation_duration 0.1
+yabai -m config window_animation_easing ease_out_quint
+
 # external bar
 yabai -m config external_bar all:70:0
 
