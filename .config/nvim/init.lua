@@ -364,7 +364,7 @@ require("lazy").setup({
 			local servers = {
 				-- Python
 				ruff = {},
-				pyrefly = {},
+				pyright = {},
 
 				-- Web Dev
 				emmet_language_server = {},
