@@ -376,6 +376,7 @@ require("lazy").setup({
 
 				-- Other
 				clangd = {}, -- C, C++, Objective-C
+        rust_analyzer= {}, -- Rust
 				jdtls = {}, -- Java
 				texlab = {}, -- Latex
 
