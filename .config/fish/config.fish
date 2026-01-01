@@ -25,7 +25,6 @@ if status is-interactive
 	abbr -a la eza --icons --group-directories-first -a
 	abbr -a nv nvim
 	abbr -a tm tmux
-	abbr -a suggest gh copilot suggest -t shell
 
 	# Config abbreviations
 	abbr -a fishconfig nvim ~/dotfilesmac/.config/fish/config.fish
