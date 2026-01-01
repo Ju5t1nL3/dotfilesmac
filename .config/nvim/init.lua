@@ -391,7 +391,7 @@ require("lazy").setup({
 
 				-- Other
 				clangd = {}, -- C, C++, Objective-C
-        rust_analyzer= {}, -- Rust
+				rust_analyzer = {}, -- Rust
 				jdtls = {}, -- Java
 				texlab = {}, -- Latex
 
@@ -464,6 +464,7 @@ require("lazy").setup({
 				javascriptreact = { "prettierd", "prettier", stop_after_first = true },
 				typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 				css = { "prettierd", "prettier", stop_after_first = true },
+				svg = { "prettierd", "prettier", stop_after_first = true },
 			},
 		},
 	},
