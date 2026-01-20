@@ -437,6 +437,13 @@ require("lazy").setup({
 				vim.lsp.config(server_name, config)
 				vim.lsp.enable(server_name)
 			end
+
+			-- use local hls server
+			vim.lsp.config("hls", {
+				cmd = { "haskell-language-server-wrapper", "--lsp" },
+				filetypes = { "haskell", "lhaskell" },
+			})
+			vim.lsp.enable("hls")
 		end,
 	},
 
