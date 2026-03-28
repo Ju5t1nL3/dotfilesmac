@@ -13,6 +13,7 @@ vim.o.showmode = false
 -- Change shift width
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
+vim.o.expandtab = true
 
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
