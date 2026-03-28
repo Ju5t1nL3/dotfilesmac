@@ -562,8 +562,8 @@ require("lazy").setup({
 				python = { exec = "python3", args = { "$(FNAME)" } },
 			},
 			template_file = {
-				cpp = "~/Coding/competitive-programming/template.cpp",
-        py = "~/Coding/competitive-programming/template.py",
+				cpp = "~/Coding/personal/competitive-programming/template.cpp",
+				py = "~/Coding/personal/competitive-programming/template.py",
 			},
 		},
 	},
