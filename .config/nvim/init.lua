@@ -401,6 +401,7 @@ require("lazy").setup({
 				rust_analyzer = {}, -- Rust
 				jdtls = {}, -- Java
 				texlab = {}, -- Latex
+				tinymist = {}, -- Typst
 
 				-- General Purpose
 				lua_ls = {
@@ -598,6 +599,18 @@ require("lazy").setup({
 			vim.fn["mkdp#util#install"]()
 		end,
 	},
+	{
+		"chomosuke/typst-preview.nvim",
+		lazy = false, -- Or ft = 'typst' to only load on typst files
+		version = "1.*",
+		build = function()
+			require("typst-preview").update()
+		end,
+		keys = {
+			-- Map this to whatever you like to launch the browser preview
+			{ "<leader>tp", "<cmd>TypstPreviewToggle<cr>", desc = "Toggle Typst Preview" },
+		},
+	},
 	{ -- Collection of various small independent plugins/modules
 		"nvim-mini/mini.nvim",
 		keys = {
@@ -677,6 +690,7 @@ require("lazy").setup({
 				"query",
 				"vim",
 				"vimdoc",
+				"typst",
 			},
 			auto_install = true,
 			highlight = {
