@@ -428,6 +428,7 @@ require("lazy").setup({
 				"prettierd",
 				"prettier",
 				"fourmolu",
+				"typstyle",
 			}
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, formatters)
@@ -480,6 +481,7 @@ require("lazy").setup({
 				typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 				css = { "prettierd", "prettier", stop_after_first = true },
 				svg = { "prettierd", "prettier", stop_after_first = true },
+				typst = { "typstyle" },
 			},
 		},
 	},
