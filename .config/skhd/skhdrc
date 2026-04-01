@@ -64,10 +64,10 @@ ctrl + shift - g : yabai -m window --display east
 # =====================
 
 # toggle window float
-shift + cmd - i : yabai -m window --toggle float --grid 4:4:1:1:2:2
+cmd + shift - i : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # maximize a window
-shift + cmd - m : yabai -m window --toggle zoom-fullscreen
+cmd + shift - m : yabai -m window --toggle zoom-fullscreen
 
 # balance out of tree windows (resize to occupy same area)
-shift + cmd - e : yabai -m space --balance
+cmd + shift - e : yabai -m space --balance
