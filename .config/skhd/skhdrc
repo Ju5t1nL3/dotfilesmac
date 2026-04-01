@@ -1,4 +1,13 @@
-# Changing Window Focus
+# =====================
+# System
+# =====================
+
+# restart yabai
+cmd + shift - r : yabai --restart-service
+
+# =====================
+# Focus
+# =====================
 
 # Change window-focus within space
 cmd - j : yabai -m window --focus south 
@@ -10,22 +19,9 @@ cmd - l : yabai -m window --focus east
 ctrl - s : yabai -m display --focus west
 ctrl - g : yabai -m display --focus east
 
-# toggle window float
-shift + cmd - i : yabai -m window --toggle float --grid 4:4:1:1:2:2
-
-# Modifying Window Size
-
-# maximize a window
-shift + cmd - m : yabai -m window --toggle zoom-fullscreen
-
-# balance out of tree windows (resize to occupy same area)
-shift + cmd - e : yabai -m space --balance
-
-# move window and split
-cmd + shift - j : yabai -m window --warp south
-cmd + shift - k : yabai -m window --warp north
-cmd + shift - h : yabai -m window --warp west
-cmd + shift - l : yabai -m window --warp east
+# =====================
+# Navigation
+# =====================
 
 # switch between spaces
 ctrl - 1 : yabai -m space --focus 1
@@ -37,6 +33,16 @@ ctrl - 6 : yabai -m space --focus 6
 ctrl - 7 : yabai -m space --focus 7
 ctrl - 8 : yabai -m space --focus 8
 ctrl - 9 : yabai -m space --focus 9
+
+# =====================
+# Move Window
+# =====================
+
+# move window and split
+cmd + shift - j : yabai -m window --warp south
+cmd + shift - k : yabai -m window --warp north
+cmd + shift - h : yabai -m window --warp west
+cmd + shift - l : yabai -m window --warp east
 
 # move window to space #
 ctrl + shift - 1 : yabai -m window --space 1
@@ -53,5 +59,15 @@ ctrl + shift - 9 : yabai -m window --space 9
 ctrl + shift - s : yabai -m window --display west 
 ctrl + shift - g : yabai -m window --display east 
 
-# restart yabai
-cmd + shift - r : yabai --restart-service
+# =====================
+# Modify layout and window size
+# =====================
+
+# toggle window float
+shift + cmd - i : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# maximize a window
+shift + cmd - m : yabai -m window --toggle zoom-fullscreen
+
+# balance out of tree windows (resize to occupy same area)
+shift + cmd - e : yabai -m space --balance
