@@ -1,9 +1,10 @@
-# config
+# core
 shell-integration = fish
-theme = Catppuccin Mocha
 working-directory = home
 window-inherit-working-directory = false
 
+# appearance
+theme = Catppuccin Mocha
 font-family = "FiraCode Nerd Font Mono"
 font-size = 20
 cursor-style = bar
