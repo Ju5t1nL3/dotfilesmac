@@ -38,7 +38,7 @@ ctrl - 9 : yabai -m space --focus 9
 # Move Window
 # =====================
 
-# move window and split
+# move window within space
 cmd + shift - j : yabai -m window --warp south
 cmd + shift - k : yabai -m window --warp north
 cmd + shift - h : yabai -m window --warp west
