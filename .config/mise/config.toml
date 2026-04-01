@@ -1,3 +1,12 @@
 [tools]
 bun = "latest"
+java = "25"
 node = "lts"
+python = "3.14"
+ruby = "4"
+uv = "latest"
+
+[settings]
+
+[settings.ruby]
+compile = false
