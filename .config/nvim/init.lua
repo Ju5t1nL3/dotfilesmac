@@ -25,12 +25,4 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 -- [[ Configure and install plugins ]]
-require("lazy").setup({
-
-	-- require 'kickstart.plugins.debug',
-	require("kickstart.plugins.indent_line"),
-	require("kickstart.plugins.autopairs"),
-	require("kickstart.plugins.neo-tree"),
-
-	-- { import = 'custom.plugins' },
-})
+require("lazy").setup("plugins")
