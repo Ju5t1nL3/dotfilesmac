@@ -1,0 +1,36 @@
+return { -- Autoformat
+	"stevearc/conform.nvim",
+	event = { "BufWritePre" },
+	cmd = { "ConformInfo" },
+	keys = {
+		{
+			"<leader>f",
+			function()
+				require("conform").format({ async = true, lsp_format = "fallback" })
+			end,
+			mode = "",
+			desc = "[F]ormat buffer",
+		},
+	},
+	opts = {
+		notify_on_error = false,
+		-- format_on_save = {
+		-- 	timeout_ms = 500,
+		-- 	lsp_format = "fallback",
+		-- },
+		formatters_by_ft = {
+			lua = { "stylua" },
+			python = { "ruff_organize_imports", "ruff_format" },
+			c = { "clang-format" },
+			cpp = { "clang-format" },
+			haskell = { "fourmolu", "stylish-haskell" },
+			javascript = { "prettierd", "prettier", stop_after_first = true },
+			typescript = { "prettierd", "prettier", stop_after_first = true },
+			javascriptreact = { "prettierd", "prettier", stop_after_first = true },
+			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+			css = { "prettierd", "prettier", stop_after_first = true },
+			svg = { "prettierd", "prettier", stop_after_first = true },
+			typst = { "typstyle" },
+		},
+	},
+}
