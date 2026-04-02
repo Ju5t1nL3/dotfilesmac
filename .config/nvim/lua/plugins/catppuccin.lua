@@ -5,7 +5,7 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			styles = {
-				comments = {},
+				comments = { "italic" },
 			},
 		})
 		vim.cmd.colorscheme("catppuccin")
