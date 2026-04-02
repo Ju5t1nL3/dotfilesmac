@@ -49,6 +49,9 @@ return { -- Collection of various small independent plugins/modules
 		-- Mini tree files
 		require("mini.files").setup()
 
+        -- Mini auto pairs
+        require("mini.pairs").setup()
+
 		-- Simple and easy statusline.
 		local statusline = require("mini.statusline")
 		statusline.setup({ use_icons = vim.g.have_nerd_font })
