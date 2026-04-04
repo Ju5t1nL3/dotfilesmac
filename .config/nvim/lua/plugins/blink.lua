@@ -19,8 +19,6 @@ return { -- Autocompletion
 		},
 		"folke/lazydev.nvim",
 	},
-	--- @module 'blink.cmp'
-	--- @type blink.cmp.Config
 	opts = {
 		keymap = {
 			preset = "default",
