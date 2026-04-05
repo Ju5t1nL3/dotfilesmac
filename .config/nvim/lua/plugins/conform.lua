@@ -18,7 +18,7 @@ return { -- Autoformat
 			python = { "ruff_organize_imports", "ruff_format" },
 			c = { "clang-format" },
 			cpp = { "clang-format" },
-			haskell = { "fourmolu", "stylish-haskell", stop_after_first = true  },
+			haskell = { "fourmolu", stop_after_first = true  },
 			javascript = { "prettierd", "prettier", stop_after_first = true },
 			typescript = { "prettierd", "prettier", stop_after_first = true },
 			javascriptreact = { "prettierd", "prettier", stop_after_first = true },

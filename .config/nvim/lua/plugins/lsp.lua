@@ -181,7 +181,6 @@ return {
 			"prettier",
 			"fourmolu",
 			"typstyle",
-			"stylish-haskell"
 		}
 		local linters = {
 			"ruff"
