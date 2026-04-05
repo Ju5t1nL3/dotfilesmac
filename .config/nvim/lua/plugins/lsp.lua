@@ -183,6 +183,9 @@ return {
 			"typstyle",
 			"stylish-haskell"
 		}
+		local linters = {
+			"ruff"
+		}
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, formatters)
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
