@@ -186,6 +186,11 @@ return {
 		local linters = {
 			"ruff"
 		}
+		local debuggers = {
+			"debugpy",
+			"codelldb"
+		}
+
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, formatters)
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
