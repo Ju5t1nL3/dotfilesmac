@@ -108,6 +108,7 @@ return {
 
     -- Install golang specific config
     require('dap-go').setup()
-    require('dap-python').setup("python3")
+    local debugpy_path = vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/bin/python"
+    require('dap-python').setup(debugpy_path)
   end,
 }
