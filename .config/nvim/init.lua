@@ -25,4 +25,8 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 -- [[ Configure and install plugins ]]
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+	change_detection = {
+		enabled = false,
+	},
+})
