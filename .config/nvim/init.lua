@@ -5,10 +5,10 @@ vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
 -- [[ Load Core Config ]]
-require("core.options")
-require("core.keymaps")
-require("core.autocmds")
-require("core.commands")
+require("config.options")
+require("config.keymaps")
+require("config.autocmds")
+require("config.commands")
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
