@@ -83,6 +83,8 @@ return {
     local dapui = require 'dapui'
 
     require('mason-nvim-dap').setup {
+      ensure_installed = {},
+      automatic_installation = false,
       -- You can provide additional configuration to the handlers,
       -- see mason-nvim-dap README for more information
       handlers = {},
