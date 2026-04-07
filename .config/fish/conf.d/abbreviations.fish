@@ -26,7 +26,7 @@ if status is-interactive
 	abbr -a nv nvim
 	abbr -a tm tmux
 
-	abbr -a bdump brew bundle dump --describe --force --file=~/dotfilesmac/Brewfile
+	abbr -a bdump brew bundle dump --brews --casks --taps --describe --force --file=~/dotfilesmac/Brewfile
 
 	# Config abbreviations
 	abbr -a fishconfig nvim ~/dotfilesmac/.config/fish/config.fish
