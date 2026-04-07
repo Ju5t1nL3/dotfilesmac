@@ -19,8 +19,6 @@ brew "fzf"
 brew "gh"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Next-gen compiler infrastructure
-brew "llvm@17"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
 # Deep clean and optimize your Mac
