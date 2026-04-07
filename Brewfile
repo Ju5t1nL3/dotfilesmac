@@ -37,8 +37,6 @@ brew "ripgrep"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
-# Internet file retriever
-brew "wget"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # A window border system for macOS
