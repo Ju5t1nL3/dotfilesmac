@@ -23,8 +23,6 @@ brew "lazygit"
 brew "mise"
 # Deep clean and optimize your Mac
 brew "mole"
-# Open source relational database management system
-brew "mysql-client"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Small build system for use with gyp or CMake
