@@ -13,8 +13,6 @@ brew "fd"
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-# Real-time software synthesizer based on the SoundFont 2 specs
-brew "fluid-synth"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
