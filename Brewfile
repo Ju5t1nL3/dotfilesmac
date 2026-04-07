@@ -29,8 +29,6 @@ brew "mysql-client"
 brew "neovim"
 # Small build system for use with gyp or CMake
 brew "ninja"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
 # Develop and deploy code with zero configuration
 brew "railway"
 # Search tool like grep and The Silver Searcher
