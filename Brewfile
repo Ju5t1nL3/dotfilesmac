@@ -1,6 +1,5 @@
 tap "felixkratz/formulae"
 tap "koekeishiya/formulae"
-tap "oven-sh/bun"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Cross-platform make
