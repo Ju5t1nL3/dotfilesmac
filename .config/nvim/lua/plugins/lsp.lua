@@ -157,8 +157,6 @@ return {
 
 			hls = {
 				manual_install = true,
-				cmd = { "haskell-language-server-wrapper", "--lsp" },
-				filetypes = { "haskell", "lhaskell" },
 			},
 
 			-- General Purpose
