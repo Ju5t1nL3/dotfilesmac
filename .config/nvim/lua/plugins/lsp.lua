@@ -155,8 +155,7 @@ return {
 			texlab = {}, -- Latex
 			tinymist = {}, -- Typst
 
-
-			hls = { 
+			hls = {
 				manual_install = true,
 				cmd = { "haskell-language-server-wrapper", "--lsp" },
 				filetypes = { "haskell", "lhaskell" },
@@ -189,11 +188,11 @@ return {
 			"typstyle",
 		}
 		local linters = {
-			"ruff"
+			"ruff",
 		}
 		local debuggers = {
 			"debugpy",
-			"codelldb"
+			"codelldb",
 		}
 
 		local ensure_installed = vim.tbl_keys(servers or {})
@@ -207,6 +206,5 @@ return {
 			vim.lsp.config(server_name, config)
 			vim.lsp.enable(server_name)
 		end
-
 	end,
 }
