@@ -149,15 +149,13 @@ return {
 			astro = {},
 
 			-- Other
-			clangd = {}, -- C, C++, Objective-C
+			clangd = { manual_install = true }, -- C, C++, Objective-C
 			rust_analyzer = {}, -- Rust
 			jdtls = {}, -- Java
 			texlab = {}, -- Latex
 			tinymist = {}, -- Typst
 
-			hls = {
-				manual_install = true,
-			},
+			hls = { manual_install = true }, -- Haskell
 
 			-- General Purpose
 			lua_ls = {
