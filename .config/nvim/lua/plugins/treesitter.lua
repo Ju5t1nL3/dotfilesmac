@@ -25,6 +25,6 @@ return { -- Highlight, edit, and navigate code
 			enable = true,
 			additional_vim_regex_highlighting = { "ruby" },
 		},
-		indent = { enable = true, disable = { "ruby" } },
+		indent = { enable = true, disable = { "ruby", "cpp" } },
 	},
 }
