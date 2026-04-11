@@ -1,4 +1,4 @@
-vim.api.nvim_create_user_command("LspInspect", function()
+vim.api.nvim_create_user_command("Lsp", function()
 	-- Get clients for the CURRENT buffer only (bufnr = 0)
 	local clients = vim.lsp.get_clients({ bufnr = 0 })
 
