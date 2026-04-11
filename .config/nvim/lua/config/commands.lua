@@ -19,8 +19,17 @@ vim.api.nvim_create_user_command("Lsp", function()
 	})
 
 	if client_idx > 0 and client_idx <= #clients then
+		local client = clients[client_idx]
+		-- This finds the absolute path of the command Neovim is running
+		local exec_path = vim.fn.exepath(client.config.cmd[1])
+
 		-- Clear the command line before printing
 		vim.cmd('echo ""')
+		print("------------------------------------------")
+		print(" LSP Name: " .. client.name)
+		print(" Binary:   " .. exec_path)
+		print("------------------------------------------")
+
 		-- Print the capabilities
 		print(vim.inspect(clients[client_idx].server_capabilities))
 	end
