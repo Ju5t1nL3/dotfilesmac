@@ -191,7 +191,14 @@ return {
 			"codelldb",
 		}
 
-		local ensure_installed = vim.tbl_keys(servers or {})
+		local servers_to_install = {}
+		for server_name, config in pairs(servers) do
+			if not config.manual_install then
+				table.insert(servers_to_install, server_name)
+			end
+		end
+
+		local ensure_installed = servers_to_install
 		vim.list_extend(ensure_installed, formatters)
 		vim.list_extend(ensure_installed, linters)
 		vim.list_extend(ensure_installed, debuggers)
