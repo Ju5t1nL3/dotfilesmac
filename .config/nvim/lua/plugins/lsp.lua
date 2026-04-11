@@ -176,7 +176,6 @@ return {
 		--    :Mason
 		local formatters = {
 			"stylua",
-			"clang-format",
 			"prettierd",
 			"prettier",
 			"fourmolu",
