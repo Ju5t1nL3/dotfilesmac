@@ -36,6 +36,8 @@ brew "ripgrep"
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# Parser generator tool
+brew "tree-sitter-cli"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # A window border system for macOS
