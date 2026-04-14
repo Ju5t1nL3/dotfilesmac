@@ -61,3 +61,9 @@ vim.o.scrolloff = 10
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 vim.o.confirm = true
+
+-- Tell Neovim to use a custom expression for folding
+vim.opt.foldmethod = "expr"
+
+-- Tell Neovim to use the built-in Treesitter fold expression
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
