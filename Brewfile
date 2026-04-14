@@ -1,5 +1,7 @@
 tap "felixkratz/formulae"
 tap "koekeishiya/formulae"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Cross-platform make
@@ -38,6 +40,8 @@ brew "stow"
 brew "tmux"
 # Parser generator tool
 brew "tree-sitter-cli"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # A window border system for macOS
