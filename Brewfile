@@ -54,3 +54,5 @@ brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Scientific and technical publishing system built on Pandoc
+cask "quarto"
