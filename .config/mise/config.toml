@@ -1,5 +1,6 @@
 [tools]
 bun = "latest"
+gcloud = "latest"
 java = "25"
 node = "lts"
 python = "3.14"
