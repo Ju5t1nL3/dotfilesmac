@@ -32,6 +32,8 @@ brew "mole"
 brew "neovim"
 # Small build system for use with gyp or CMake
 brew "ninja"
+# Object-relational database system
+brew "postgresql@18", link: true
 # Develop and deploy code with zero configuration
 brew "railway"
 # Search tool like grep and The Silver Searcher
