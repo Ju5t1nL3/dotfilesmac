@@ -36,5 +36,5 @@ if status is-interactive
 	abbr -a sketchybarconfig nvim ~/dotfilesmac/.config/sketchybar/sketchybarrc
 	abbr -a tmuxconfig nvim ~/dotfilesmac/.config/tmux/tmux.conf
 
-	abbr -a fishrestart source ~/.config/fish/config.fish
+	abbr -a fishrestart exec fish
 end
