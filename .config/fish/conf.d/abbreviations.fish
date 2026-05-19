@@ -37,4 +37,5 @@ if status is-interactive
 	abbr -a tmuxconfig nvim ~/dotfilesmac/.config/tmux/tmux.conf
 
 	abbr -a fishrestart exec fish
+	abbr -a fixyabai "killall yabai skhd; yabai --start-service; skhd --start-service"
 end
