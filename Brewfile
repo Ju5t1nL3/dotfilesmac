@@ -56,6 +56,8 @@ brew "felixkratz/formulae/sketchybar"
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
+cask "font-fira-code-nerd-font"
+cask "font-sketchybar-app-font"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Scientific and technical publishing system built on Pandoc
