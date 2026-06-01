@@ -3,4 +3,5 @@
 ^\.gitignore$
 ^Brewfile$
 ^README\.md$
+^AGENTS\.md$
 wallpapers($|/)
