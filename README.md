@@ -8,6 +8,8 @@ Adjust these in System Settings before or after running the installer:
 
 - Keyboard > Keyboard Shortcuts > Modifier Keys: rebind Caps Lock to Esc.
 - Keyboard > Keyboard Shortcuts > Modifier Keys: swap Control and Command.
+- Control Center > Automatically hide and show the menu bar: set to Always.
+- Desktop & Dock > Minimize windows into application icon: turn off.
 
 ## Quick Start
 
