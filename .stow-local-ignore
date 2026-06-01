@@ -1,4 +1,4 @@
-^docs($|/)
 .DS_Store
 \.git
 Brewfile
+^README\.md$
