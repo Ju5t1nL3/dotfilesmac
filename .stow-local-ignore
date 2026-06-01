@@ -4,4 +4,6 @@
 ^Brewfile$
 ^README\.md$
 ^AGENTS\.md$
+^install\.sh$
+scripts($|/)
 wallpapers($|/)
