@@ -12,6 +12,8 @@ has stow || die "stow is not installed. Rerun scripts/01-brew.sh first."
 
 cd "$DOTFILES_DIR"
 
+mkdir -p "$HOME/.config"
+
 info "Checking for symlink conflicts"
 stow -n -v . -t "$HOME"
 
