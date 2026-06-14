@@ -31,7 +31,7 @@ format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 
 [cpp]
-format = 'via [$symbol ($version(-$name) )]($style)'
+format = '[$symbol ($version(-$name) )]($style)'
 disabled = false
 symbol = ''
 detect_extensions = ['cpp', 'cc', 'cxx', 'c++', 'h', 'hpp', 'hh', 'hxx', 'h++', 'tcc']
