@@ -6,9 +6,16 @@ format = """
 ╭─ $directory\
 $git_branch\
 $fill\
-$python\
-$nodejs\
+$bun\
+$c\
 $cpp\
+$haskell\
+$java\
+$lua\
+$nodejs\
+$python\
+$rust\
+$typst\
 $jobs\
 $time\
 $line_break\
@@ -24,17 +31,58 @@ style = "bold lavender"
 style = "bold mauve"
 
 # Right side: Devtool versions + Time
-[python]
-style = "bold teal"
-symbol = ""
-format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+[bun]
+style = "bold rosewater"
+symbol = ""
+format = '[${symbol} (${version} )]($style)'
 
+[c]
+style = "bold subtext-1"
+symbol = ""
+format = '[$symbol ($version(-$name) )]($style)'
 
 [cpp]
+style = "bold blue"
 format = '[$symbol ($version(-$name) )]($style)'
 disabled = false
 symbol = ''
 detect_extensions = ['cpp', 'cc', 'cxx', 'c++', 'h', 'hpp', 'hh', 'hxx', 'h++', 'tcc']
+
+[haskell]
+style = "bold mauve"
+symbol = "󰲒"
+format = '[${symbol} (${version} )]($style)'
+
+[java]
+style = "bold red"
+symbol = "󰬷"
+format = '[${symbol} (${version} )]($style)'
+
+[lua]
+style = "bold blue"
+symbol = "󰢱"
+format = '[${symbol} (${version} )]($style)'
+version_format = 'v${major}.${minor}'
+lua_binary = "luajit"
+
+[nodejs]
+style = "bold green"
+symbol = "󰎙"
+format = '[${symbol} (${version} )]($style)'
+
+[python]
+style = "bold sapphire"
+symbol = ""
+format = '[${symbol} ${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[rust]
+style = "bold maroon"
+symbol = "󱘗"
+format = '[${symbol} (${version} )]($style)'
+
+[typst]
+style = "bold sky"
+format = '[${symbol}(${version} )]($style)'
 
 [time]
 disabled = false
