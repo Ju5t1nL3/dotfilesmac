@@ -27,6 +27,7 @@ $line_break\
 [directory]
 truncation_length = 4
 style = "bold lavender"
+read_only = " "
 
 [git_branch]
 style = "bold mauve"
