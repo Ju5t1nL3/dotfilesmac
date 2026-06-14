@@ -18,6 +18,7 @@ $rust\
 $typst\
 $jobs\
 $time\
+$cmd_duration\
 $line_break\
 ╰─ $character\
 """
@@ -83,6 +84,10 @@ format = '[${symbol} (${version} )]($style)'
 [typst]
 style = "bold sky"
 format = '[${symbol}(${version} )]($style)'
+
+[cmd_duration]
+style = "bold yellow"
+format = '[took $duration]($style)'
 
 [time]
 disabled = false
