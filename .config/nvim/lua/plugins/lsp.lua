@@ -180,6 +180,7 @@ return {
 			"stylua",
 			"prettierd",
 			"prettier",
+			"biome",
 			"fourmolu",
 			"typstyle",
 		}

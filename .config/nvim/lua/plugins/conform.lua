@@ -18,6 +18,11 @@ return { -- Autoformat
 				upward = true,
 			})[1] ~= nil
 		end
+
+		local function has_biome(ctx)
+			return has_config(ctx, { "biome.json", "biome.jsonc" })
+		end
+
 		local function has_prettier(ctx)
 			return has_config(ctx, {
 				".prettierrc",
@@ -41,6 +46,9 @@ return { -- Autoformat
 		return {
 			notify_on_error = false,
 			formatters = {
+				biome = {
+					condition = has_biome,
+				},
 				prettier = {
 					condition = has_prettier,
 				},
@@ -49,16 +57,17 @@ return { -- Autoformat
 				},
 			},
 			formatters_by_ft = {
+				astro = { "biome", "prettierd", "prettier", stop_after_first = true },
 				lua = { "stylua" },
 				python = { "ruff_organize_imports", "ruff_format" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
 				haskell = { "fourmolu", stop_after_first = true },
-				javascript = { "prettierd", "prettier", stop_after_first = true },
-				typescript = { "prettierd", "prettier", stop_after_first = true },
-				javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-				typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-				css = { "prettierd", "prettier", stop_after_first = true },
+				javascript = { "biome", "prettierd", "prettier", stop_after_first = true },
+				typescript = { "biome", "prettierd", "prettier", stop_after_first = true },
+				javascriptreact = { "biome", "prettierd", "prettier", stop_after_first = true },
+				typescriptreact = { "biome", "prettierd", "prettier", stop_after_first = true },
+				css = { "biome", "prettierd", "prettier", stop_after_first = true },
 				svg = { "prettierd", "prettier", stop_after_first = true },
 				typst = { "typstyle" },
 			},
