@@ -5,7 +5,7 @@ java = "25"
 node = "lts"
 "npm:@openai/codex" = "latest"
 "npm:sharp-cli" = "latest"
-"pipx:harlequin" = "latest"
+"pipx:harlequin" = { version = "latest", extras = "postgres" }
 python = "3.14"
 ruby = "4"
 typst = "latest"
