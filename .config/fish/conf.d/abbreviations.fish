@@ -38,4 +38,6 @@ if status is-interactive
 
 	abbr -a fishrestart exec fish
 	abbr -a fixyabai "killall yabai skhd; yabai --start-service; skhd --start-service"
+
+	abbr -a codex-misc codex -C /tmp/codex-misc -s read-only
 end
