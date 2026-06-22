@@ -1,5 +1,5 @@
-tap "felixkratz/formulae"
-tap "koekeishiya/formulae"
+tap "felixkratz/formulae", trusted: true
+tap "koekeishiya/formulae", trusted: true
 # Download with resuming and segmented downloading
 brew "aria2"
 # Clone of cat(1) with syntax highlighting and Git integration
