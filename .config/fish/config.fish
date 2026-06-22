@@ -8,9 +8,6 @@ if status is-interactive
 		source "$HOME/.cargo/env.fish"
 	end
 
-	# initialize direnv
-	direnv hook fish | source
-
 	# initialize starship with transient prompt
 	function starship_transient_prompt_func
 		starship  module directory

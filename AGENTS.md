@@ -38,4 +38,4 @@ Recent commits use short imperative subjects, usually capitalized, such as `Add 
 
 ## Security & Configuration Tips
 
-Do not commit secrets, machine-specific tokens, private hostnames, or local credentials. Prefer environment variables, `direnv`, or untracked local files for sensitive settings. Review `Brewfile` additions carefully because they install software on contributor machines.
+Do not commit secrets, machine-specific tokens, private hostnames, or local credentials. Prefer environment variables or untracked local files for sensitive settings. Review `Brewfile` additions carefully because they install software on contributor machines.
