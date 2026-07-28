@@ -4,6 +4,8 @@ tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae", tr
 brew "aria2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
 # Cross-platform make
 brew "cmake"
 # Modern, maintained replacement for ls
