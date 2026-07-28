@@ -1,5 +1,5 @@
-tap "felixkratz/formulae", trusted: true
-tap "koekeishiya/formulae", trusted: true
+tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git", trusted: true
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae", trusted: true
 # Download with resuming and segmented downloading
 brew "aria2"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -46,14 +46,14 @@ brew "tree-sitter-cli"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Simple hotkey-daemon for macOS.
+brew "asmvik/formulae/skhd"
+# A tiling window manager for macOS based on binary space partitioning.
+brew "asmvik/formulae/yabai"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
-# Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 cask "font-fira-code-nerd-font"
 cask "font-sf-pro"
 cask "font-sketchybar-app-font"
