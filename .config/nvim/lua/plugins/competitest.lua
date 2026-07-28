@@ -14,7 +14,7 @@ return {
 			},
 			cpp = {
 				exec = "g++",
-				args = { "-O2", "-g", "-fno-omit-frame-pointer", "-Wall", "$(FNAME)", "-o", "main", "-DLOCAL" },
+				args = { "-std=c++17", "-O2", "-g", "-fno-omit-frame-pointer", "-Wall", "$(FNAME)", "-o", "main", "-DLOCAL" },
 			},
 			rust = { exec = "rustc", args = { "-g", "$(FNAME)" } },
 			java = { exec = "javac", args = { "$(FNAME)" } },
