@@ -24,6 +24,8 @@ brew "gh"
 brew "lazygit"
 # Next-gen compiler infrastructure
 brew "llvm"
+# Web and API based SMTP testing
+brew "mailpit"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
 # Deep clean and optimize your Mac
