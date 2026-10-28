@@ -1,10 +1,12 @@
 [tools]
 bun = "latest"
+claude = "latest"
 gcloud = "latest"
 java = "25"
 node = "lts"
 "npm:@openai/codex" = "latest"
 "npm:sharp-cli" = "latest"
+pnpm = "latest"
 python = "3.14"
 ruby = "4"
 typst = "latest"
