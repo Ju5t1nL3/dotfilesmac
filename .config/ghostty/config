@@ -5,8 +5,8 @@ window-inherit-working-directory = false
 
 # appearance
 theme = Catppuccin Mocha
-font-family = "FiraCode Nerd Font Mono"
-font-size = 20
+font-family = "IoskeleyMonoTerm Nerd Font"
+font-size = 24
 cursor-style = bar
 
 adjust-cursor-thickness = 3
